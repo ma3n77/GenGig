@@ -324,13 +324,39 @@
   .post-gig-card {
     background-color: #FFFFFF;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     padding: 48px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   @media (max-width: 768px) {
     .post-gig-card {
       padding: 32px;
+    }
+  }
+
+  .post-gig-background {
+    background: linear-gradient(135deg, 
+      #FFB866 0%, 
+      #FFA94D 15%, 
+      #C6BED8 35%, 
+      #0D6E7A 65%, 
+      #0B5C73 85%,
+      #FFB866 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 25s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
     }
   }
 

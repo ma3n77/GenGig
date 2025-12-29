@@ -4,7 +4,7 @@ $pages = @(
     @{Name="Home"; Url="http://localhost:3000"},
     @{Name="About"; Url="http://localhost:3000/about"},
     @{Name="Contact"; Url="http://localhost:3000/contact"},
-    @{Name="Success Stories"; Url="http://localhost:3000/success-stories"}
+    @{Name="Explore"; Url="http://localhost:3000/explore"}
 )
 
 foreach ($page in $pages) {

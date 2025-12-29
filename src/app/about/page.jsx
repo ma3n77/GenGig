@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowRightIcon, HeartIcon, ShieldCheckIcon, LightBulbIcon, UsersIcon } from '@heroicons/react/24/outline'
 import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
 import Container from '../../components/Container'
 import Section from '../../components/Section'
 
@@ -13,7 +14,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <Section background="gradient" padding="xl" className="pt-24 lg:pt-28">
         <div className="text-center">
@@ -24,7 +25,7 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-            At Gengig, we believe that age shouldn't limit potential. We're building a safe, 
+            At Gengig, we believe that age shouldn't limit potential. We're building a safe,
             secure platform where talented teenagers can turn their creativity into real opportunities.
           </p>
         </div>
@@ -38,13 +39,13 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              We're on a mission to bridge the gap between young talent and real-world opportunities. 
-              Traditional freelancing platforms weren't designed with teenagers in mind, leaving a 
+              We're on a mission to bridge the gap between young talent and real-world opportunities.
+              Traditional freelancing platforms weren't designed with teenagers in mind, leaving a
               generation of digital natives without safe ways to monetize their skills.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Gengig changes that by providing a monitored, secure environment where young creators 
-              aged 13-21 can safely connect with clients, build their portfolios, and earn income 
+              Gengig changes that by providing a monitored, secure environment where young creators
+              aged 13-21 can safely connect with clients, build their portfolios, and earn income
               while developing crucial professional skills.
             </p>
             <Link href="/register" className="btn-primary btn-lg group">
@@ -56,32 +57,32 @@ export default function AboutPage() {
             <div className="bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl p-8 shadow-lg">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" 
-                       style={{background: 'linear-gradient(135deg, var(--color-brand-900) 0%, var(--color-accent-500) 100%)'}}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3"
+                    style={{ background: 'linear-gradient(135deg, var(--color-brand-900) 0%, var(--color-accent-500) 100%)' }}>
                     <ShieldCheckIcon className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-1">Safe & Secure</h3>
                   <p className="text-sm text-gray-600">Advanced monitoring and protection</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" 
-                       style={{background: 'linear-gradient(135deg, var(--color-accent-500) 0%, var(--color-secondary-500) 100%)'}}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3"
+                    style={{ background: 'linear-gradient(135deg, var(--color-accent-500) 0%, var(--color-secondary-500) 100%)' }}>
                     <LightBulbIcon className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-1">Innovation First</h3>
                   <p className="text-sm text-gray-600">Encouraging creative solutions</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" 
-                       style={{background: 'linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-brand-700) 100%)'}}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3"
+                    style={{ background: 'linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-brand-700) 100%)' }}>
                     <UsersIcon className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-1">Community</h3>
                   <p className="text-sm text-gray-600">Building connections that matter</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" 
-                       style={{background: 'linear-gradient(135deg, var(--color-brand-700) 0%, var(--color-accent-600) 100%)'}}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3"
+                    style={{ background: 'linear-gradient(135deg, var(--color-brand-700) 0%, var(--color-accent-600) 100%)' }}>
                     <HeartIcon className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-1">Youth-Focused</h3>
@@ -106,37 +107,37 @@ export default function AboutPage() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
-            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6" 
-                 style={{background: 'linear-gradient(135deg, var(--color-brand-900) 0%, var(--color-accent-500) 100%)'}}>
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              style={{ background: 'linear-gradient(135deg, var(--color-brand-900) 0%, var(--color-accent-500) 100%)' }}>
               <ShieldCheckIcon className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Safety First</h3>
             <p className="text-gray-600 leading-relaxed">
-              We prioritize the safety and well-being of young users above all else, 
+              We prioritize the safety and well-being of young users above all else,
               with comprehensive monitoring and protection systems.
             </p>
           </div>
 
           <div className="text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
-            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6" 
-                 style={{background: 'linear-gradient(135deg, var(--color-accent-500) 0%, var(--color-secondary-500) 100%)'}}>
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              style={{ background: 'linear-gradient(135deg, var(--color-accent-500) 0%, var(--color-secondary-500) 100%)' }}>
               <LightBulbIcon className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Innovation</h3>
             <p className="text-gray-600 leading-relaxed">
-              We encourage creative thinking and innovative solutions, helping young minds 
+              We encourage creative thinking and innovative solutions, helping young minds
               explore their potential without limits.
             </p>
           </div>
 
           <div className="text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
-            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6" 
-                 style={{background: 'linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-brand-700) 100%)'}}>
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              style={{ background: 'linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-brand-700) 100%)' }}>
               <UsersIcon className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Empowerment</h3>
             <p className="text-gray-600 leading-relaxed">
-              We believe in empowering young people with the tools, opportunities, 
+              We believe in empowering young people with the tools, opportunities,
               and confidence they need to succeed.
             </p>
           </div>
@@ -218,8 +219,8 @@ export default function AboutPage() {
             <Link href="/register" className="btn-secondary btn-xl">
               Get Started Today
             </Link>
-            <Link href="/success-stories" className="btn-ghost btn-xl text-white border-white hover:bg-white hover:text-indigo-600">
-              View Success Stories
+            <Link href="/explore" className="btn-ghost btn-xl text-white border-white hover:bg-white hover:text-indigo-600">
+              Explore Gigs
             </Link>
             <Link href="/contact" className="btn-ghost btn-xl text-white border-white hover:bg-white hover:text-indigo-600">
               Contact Us
@@ -227,6 +228,9 @@ export default function AboutPage() {
           </div>
         </div>
       </Section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }

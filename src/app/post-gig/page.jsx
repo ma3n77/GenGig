@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
+import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
 
 export default function PostGigPage() {
   const [formData, setFormData] = useState({
@@ -38,63 +40,25 @@ export default function PostGigPage() {
   ]
 
   return (
-    <div className="min-h-screen" style={{ 
-      background: 'linear-gradient(to bottom, #F8F9FD 0%, #E8ECFA 100%)' 
-    }}>
-      {/* Navigation Bar */}
-      <nav className="w-full py-6 px-8">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-8 h-8 relative">
-              <Image
-                src="/images/gen_logo.png"
-                alt="GenGig Logo"
-                width={32}
-                height={32}
-                className="object-contain"
-                priority
-              />
-            </div>
-            <span className="text-2xl font-bold" style={{ color: '#1A2951' }}>
-              GenGig
-            </span>
-          </Link>
-          
-          {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="font-medium transition-colors duration-200 hover:opacity-80" style={{ color: '#1A2951' }}>
-              Home
-            </Link>
-            <Link href="/explore" className="font-medium transition-colors duration-200 hover:opacity-80" style={{ color: '#1A2951' }}>
-              Explore a gig
-            </Link>
-            <Link 
-              href="/post-gig" 
-              className="font-bold border-b-2 transition-colors duration-200" 
-              style={{ color: '#0D6E7A', borderColor: '#0D6E7A' }}
-            >
-              Post a gig
-            </Link>
-            <Link href="/contact" className="font-medium transition-colors duration-200 hover:opacity-80" style={{ color: '#1A2951' }}>
-              Contact us
-            </Link>
-            <Link 
-              href="/login" 
-              className="px-6 py-3 font-semibold transition-all duration-200 hover:shadow-lg rounded-full"
-              style={{ 
-                backgroundColor: '#FFB866',
-                color: '#333333'
-              }}
-            >
-              Login / Sign up
-            </Link>
-          </div>
-        </div>
-      </nav>
+    <div className="min-h-screen relative overflow-hidden post-gig-background">
+      {/* Animated background overlay with decorative elements */}
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-white rounded-full mix-blend-overlay blur-3xl transform -translate-x-1/4 -translate-y-1/4 animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white rounded-full mix-blend-overlay blur-3xl transform translate-x-1/4 translate-y-1/4 animate-pulse" style={{ animationDelay: '1.5s', animationDuration: '4s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-white rounded-full mix-blend-overlay blur-3xl transform -translate-x-1/2 -translate-y-1/2 animate-pulse" style={{ animationDelay: '3s', animationDuration: '5s' }}></div>
+      </div>
+
+      {/* Subtle pattern overlay */}
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+        backgroundSize: '50px 50px'
+      }}></div>
+
+      {/* Navigation */}
+      <Navbar />
 
       {/* Main Content */}
-      <div className="flex items-start justify-center px-4 py-12">
+      <div className="flex items-start justify-center px-4 py-12 relative z-10">
         <div className="w-full max-w-6xl post-gig-card">
           {/* Page Title */}
           <h1 className="text-4xl font-bold mb-12 text-center md:text-left" style={{ color: '#1A2951' }}>
@@ -157,11 +121,10 @@ export default function PostGigPage() {
                           className="sr-only"
                         />
                         <div
-                          className={`post-gig-radio ${
-                            formData.projectType === 'fixed'
-                              ? 'post-gig-radio-checked'
-                              : 'post-gig-radio-unchecked'
-                          }`}
+                          className={`post-gig-radio ${formData.projectType === 'fixed'
+                            ? 'post-gig-radio-checked'
+                            : 'post-gig-radio-unchecked'
+                            }`}
                         >
                           {formData.projectType === 'fixed' && (
                             <div className="w-2 h-2 bg-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
@@ -184,11 +147,10 @@ export default function PostGigPage() {
                           className="sr-only"
                         />
                         <div
-                          className={`post-gig-radio ${
-                            formData.projectType === 'hourly'
-                              ? 'post-gig-radio-checked'
-                              : 'post-gig-radio-unchecked'
-                          }`}
+                          className={`post-gig-radio ${formData.projectType === 'hourly'
+                            ? 'post-gig-radio-checked'
+                            : 'post-gig-radio-unchecked'
+                            }`}
                         >
                           {formData.projectType === 'hourly' && (
                             <div className="w-2 h-2 bg-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
@@ -328,48 +290,7 @@ export default function PostGigPage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white mt-16">
-        <div className="max-w-7xl mx-auto px-4 py-16">
-          <div className="grid md:grid-cols-4 gap-8 lg:gap-12">
-            <div className="md:col-span-1">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-8 h-8 relative rounded-lg flex items-center justify-center">
-                  <Image
-                    src="/images/gen_logo.png"
-                    alt="GenGig Logo"
-                    width={32}
-                    height={32}
-                    className="object-contain"
-                  />
-                </div>
-                <h3 className="text-xl font-bold">GenGig</h3>
-              </div>
-              <p className="text-gray-400 leading-relaxed mb-6">
-                Empowering the next generation through safe, meaningful work opportunities.
-              </p>
-            </div>
-
-            <div className="md:col-span-3">
-              <div className="flex flex-col md:flex-row justify-between items-center">
-                <div className="flex space-x-6 mb-4 md:mb-0">
-                  <Link href="/terms" className="text-gray-400 hover:text-white transition-colors duration-200" style={{ color: '#5B6270' }}>
-                    Terms
-                  </Link>
-                  <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200" style={{ color: '#5B6270' }}>
-                    Privacy
-                  </Link>
-                  <Link href="/cookies" className="text-gray-400 hover:text-white transition-colors duration-200" style={{ color: '#5B6270' }}>
-                    Cookies
-                  </Link>
-                </div>
-                <p className="text-gray-400">
-                  © 2025 All Rights Reserved
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

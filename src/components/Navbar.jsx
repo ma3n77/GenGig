@@ -46,7 +46,6 @@ export default function Navbar() {
     { href: '/', label: 'Home' },
     { href: '/explore', label: 'Explore a gig' },
     { href: '/post-gig', label: 'Post a gig' },
-    { href: '/success-stories', label: 'Success Stories' },
     { href: '/contact', label: 'Contact us' }
   ]
 

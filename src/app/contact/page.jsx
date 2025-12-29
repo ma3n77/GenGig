@@ -1,13 +1,14 @@
 import Link from 'next/link'
-import { 
-  EnvelopeIcon, 
-  PhoneIcon, 
-  MapPinIcon, 
+import {
+  EnvelopeIcon,
+  PhoneIcon,
+  MapPinIcon,
   ChatBubbleLeftRightIcon,
   ClockIcon,
   QuestionMarkCircleIcon
 } from '@heroicons/react/24/outline'
 import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
 import Container from '../../components/Container'
 import Section from '../../components/Section'
 
@@ -20,7 +21,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <Section background="gradient" padding="xl" className="pt-24 lg:pt-28">
         <div className="text-center">
@@ -31,7 +32,7 @@ export default function ContactPage() {
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Have questions about Gengig? Need support? Want to learn more about our platform? 
+            Have questions about Gengig? Need support? Want to learn more about our platform?
             We'd love to hear from you and help you get started.
           </p>
         </div>
@@ -141,8 +142,8 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Other Ways to Reach Us</h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" 
-                       style={{background: 'linear-gradient(135deg, var(--color-brand-900) 0%, var(--color-accent-500) 100%)'}}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: 'linear-gradient(135deg, var(--color-brand-900) 0%, var(--color-accent-500) 100%)' }}>
                     <EnvelopeIcon className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -155,8 +156,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" 
-                       style={{background: 'linear-gradient(135deg, var(--color-accent-500) 0%, var(--color-secondary-500) 100%)'}}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: 'linear-gradient(135deg, var(--color-accent-500) 0%, var(--color-secondary-500) 100%)' }}>
                     <ChatBubbleLeftRightIcon className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -167,8 +168,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" 
-                       style={{background: 'linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-brand-700) 100%)'}}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: 'linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-brand-700) 100%)' }}>
                     <PhoneIcon className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -185,7 +186,7 @@ export default function ContactPage() {
             <div className="bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl p-6">
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                     style={{background: 'linear-gradient(135deg, var(--color-brand-700) 0%, var(--color-accent-600) 100%)'}}>
+                  style={{ background: 'linear-gradient(135deg, var(--color-brand-700) 0%, var(--color-accent-600) 100%)' }}>
                   <MapPinIcon className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -201,7 +202,7 @@ export default function ContactPage() {
             <div className="bg-white border border-gray-200 rounded-2xl p-6">
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                     style={{background: 'linear-gradient(135deg, var(--color-accent-600) 0%, var(--color-brand-900) 100%)'}}>
+                  style={{ background: 'linear-gradient(135deg, var(--color-accent-600) 0%, var(--color-brand-900) 100%)' }}>
                   <ClockIcon className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -242,7 +243,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <div className="flex items-start space-x-4">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                   style={{background: 'linear-gradient(135deg, var(--color-brand-900) 0%, var(--color-accent-500) 100%)'}}>
+                style={{ background: 'linear-gradient(135deg, var(--color-brand-900) 0%, var(--color-accent-500) 100%)' }}>
                 <QuestionMarkCircleIcon className="h-5 w-5 text-white" />
               </div>
               <div>
@@ -258,7 +259,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <div className="flex items-start space-x-4">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                   style={{background: 'linear-gradient(135deg, var(--color-accent-500) 0%, var(--color-secondary-500) 100%)'}}>
+                style={{ background: 'linear-gradient(135deg, var(--color-accent-500) 0%, var(--color-secondary-500) 100%)' }}>
                 <QuestionMarkCircleIcon className="h-5 w-5 text-white" />
               </div>
               <div>
@@ -274,7 +275,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <div className="flex items-start space-x-4">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                   style={{background: 'linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-brand-700) 100%)'}}>
+                style={{ background: 'linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-brand-700) 100%)' }}>
                 <QuestionMarkCircleIcon className="h-5 w-5 text-white" />
               </div>
               <div>
@@ -290,7 +291,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-2xl p-6 shadow-sm">
             <div className="flex items-start space-x-4">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                   style={{background: 'linear-gradient(135deg, var(--color-brand-700) 0%, var(--color-accent-600) 100%)'}}>
+                style={{ background: 'linear-gradient(135deg, var(--color-brand-700) 0%, var(--color-accent-600) 100%)' }}>
                 <QuestionMarkCircleIcon className="h-5 w-5 text-white" />
               </div>
               <div>
@@ -311,6 +312,9 @@ export default function ContactPage() {
           </Link>
         </div>
       </Section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }
